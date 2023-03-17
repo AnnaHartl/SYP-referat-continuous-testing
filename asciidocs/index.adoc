@@ -1,6 +1,6 @@
-= My Project
-firstname lastname
-1.0.0, yyyy-mm-dd: Some notes
+= Continuous Testing und Testcontainers
+Anna Hartl
+1.0.0, 2021-03-16
 ifndef::imagesdir[:imagesdir: images]
 //:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
 :sourcedir: ../src/main/java
@@ -11,11 +11,63 @@ ifndef::imagesdir[:imagesdir: images]
 //Need this blank line after ifdef, don't know why...
 ifdef::backend-html5[]
 
-// print the toc here (not at the default position)
-//toc::[]
+[quote]
+In God we trust; all the rest we test.
 
-== Header 1
+== Was ist Continuous Testing?
+
+[quote, IBM]
+    Continuous testing is the process of incorporating automated feedback at different stages of the software development life cycle (SDLC) in support of better speed and efficiency when managing deployments.
 
 
-=== Header 2
+Kontinuierliches Testen ist der Prozess,
+bei dem automatisiertes Feedback in verschiedenen Phasen des Softwareentwicklungslebenszyklus (SDLC)
+integriert wird, um eine höhere Geschwindigkeit und Effizienz bei der
+*Verwaltung von Bereitstellungen* zu unterstützen.
+
+Eng verbunden mit Continuous Integration (CI),
+weil durch z. B. GH-Actions die Application bei jedem Commit getestet wird.
+
+QA Scripts - Quality Assurance
+
+Feedback wird sofort beim erstellen von Code gegeben.
+
+=== Alter Ansatz
+
+=== Neuer Ansatz
+
+
+
+== Software Development Life Cycle (SDLC)
+
+image::SDLC.png[]
+
+== Vorteile
+
+* Verbesserte Code Qualität
+* Vermeidung von Engpässen
+    * In einem Unternehmen wird zuerst Code geschrieben
+und dann an ein Testabteilung gesendet das verursacht lange warte Zeiten
+* Beschleunigung von DevOps-Prozessen
+
+Traditionally, testing software is only done after code is written and sent to the
+Quality Assurance department to be independently tested. After bugs are found, the
+code is then sent back to developers to be fixed. This testing model is relatively functional.
+However, it is risky, disrupted,
+and time-consuming. Instead, businesses nowadays require fast delivery of high-quality products.
+
+https://katalon.com/resources-center/blog/continuous-testing-introduction[Quelle]
+
+=== Arten von Tests
+
+https://www.ibm.com/topics/continuous-testing[Quelle IBM]
+
+== Beispiel mit GH-Actions
+
+
+== Was sind Testcontainers?
+
+== Notes
+Video herzeigen?
+
 
