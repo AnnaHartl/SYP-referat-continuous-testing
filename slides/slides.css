@@ -1,0 +1,29 @@
+.reveal section div.plain img {
+    border: 0;
+    box-shadow: none;
+}
+
+.reveal .lightbg {
+    background: rgba(255, 255, 255, 0.82)
+}
+
+.reveal .catSeg h2{
+    color: rgb(116, 40, 134);
+}
+
+.reveal .catSegText{
+    color: rgb(116, 40, 134);
+}
+
+.reveal .catClas h2{
+    color: rgb(255, 116, 16);
+}
+
+.reveal .catClasText{
+    color: rgb(255, 116, 16);
+}
+
+
+.reveal .header { background: rgba(255, 255, 255, 0.82); font-size: 29px}
+
+.reveal .seg { background: rgb(128, 138, 182); }

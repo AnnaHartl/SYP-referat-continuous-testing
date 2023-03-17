@@ -1,0 +1,12 @@
+.reveal section div.plain img {
+    border: 0;
+    box-shadow: none;
+}
+
+.reveal .lightbg { background: rgba(255, 255, 255, 0.82); }
+.reveal .mv{ background: rgba(217, 217, 217, 0.82); }
+
+
+.reveal .header { background: rgba(255, 255, 255, 0.82); font-size: 29px}
+
+.reveal .seg { background: rgb(128, 138, 182); }
