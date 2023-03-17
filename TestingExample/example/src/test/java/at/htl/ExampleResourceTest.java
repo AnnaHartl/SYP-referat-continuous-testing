@@ -10,12 +10,35 @@ import static org.hamcrest.CoreMatchers.is;
 public class ExampleResourceTest {
 
     @Test
-    public void testHelloEndpoint() {
+    public void getAll() {
         given()
-          .when().get("/hello")
-          .then()
-             .statusCode(200)
-             .body(is("Hello from RESTEasy Reactive"));
+                .when().get("/tdd")
+                .then()
+                .statusCode(200)
+                .body(
+                        "$.size()", is(1),
+                        "[0].id", is(1),
+                        "[0].message", is("Hello")
+                );
+    }
+
+    @Test
+    public void getOneFound() {
+        given()
+                .when().get("/tdd/1")
+                .then()
+                .statusCode(200)
+                .body(
+                        "id", is(1),
+                        "message", is("Hello")
+                );
+    }
+
+    @Test
+    public void getOneNotFound() {
+        given()
+                .when().get("/tdd/2")
+                .then().statusCode(404);
     }
 
 }
