@@ -1,0 +1,56 @@
+= MusicVoting
+:customcss: slides_mv.css
+SYP-Projekt
+1.0, 2020-08-22
+ifndef::sourcedir[:sourcedir: ../src/main/java]
+ifndef::imagesdir[:imagesdir: images]
+ifndef::backend[:backend: html5]
+:icons: font
+
+image::mv_logo.png[width=200px, role=plain]
+
+== Projektteam
+image::wir.jpeg[width=600px, role=plain]
+Sheila Hautzmayer und Anna Hartl
+
+[.lightbg, background-opacity="0.8"]
+== Langweilige Party
+image::langweiligeParty.jpg[background]
+
+[.lightbg, background-opacity="0.8"]
+== Nicht mit MusicVoting
+image::party.jpg[background]
+
+[.lightbg, background-opacity="0.6"]
+== Phoenix aus der Asche
+image::error.jpg[background]
+* Einsatz beim Absolvent*innen Fest der Schule
+* Alte Version hatte viele Fehler
+
+== Youtube API
+* 10 000 Quota am Tag
+* Suchanfrage = 100 Quota
+* 100 Suchanfragen an einem Tag
+
+image::youtube.png[width=500px, role=plain]
+
+== Die Alternative
+Webscraping mit Jsoup
+
+image::geld.jpg[width=500px, role=plain]
+
+
+== Systemarchitektur
+image::architektur.png[width=600px, role=plain]
+
+
+[.lightbg, background-opacity="0.8"]
+== Deployment
+image::vm.jpg[background]
+
+* VM vom Sysadmin
+
+
+[.lightbg, background-opacity="0.5"]
+== Live Demo
+image::hands.jpeg[background, width=800px, role=plain]
