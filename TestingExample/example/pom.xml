@@ -52,6 +52,7 @@
     </dependency>
   </dependencies>
   <build>
+    <finalName>quarkus-demo-actions</finalName>
     <plugins>
       <plugin>
         <groupId>${quarkus.platform.group-id}</groupId>
