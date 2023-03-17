@@ -66,6 +66,7 @@ https://www.ibm.com/topics/continuous-testing[Quelle IBM]
 
 == Beispiel mit GH-Actions
 
+https://annahartl.github.io/SYP-referat-continuous-testing/ContinuousTestingExample.html[Quarkus Beispiel]
 
 == Was sind Testcontainers?
 

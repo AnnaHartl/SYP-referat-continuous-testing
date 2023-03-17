@@ -54,8 +54,8 @@ jobs:
           context: ./TestingExample/example
           file: ./TestingExample/example/src/main/docker/Dockerfile.jvm
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_REPOSITORY }}-backend:latest
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_REPOSITORY }}-example:latest
           build-args: |
             configuration=production
-          cache-from: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_REPOSITORY }}-backend:buildcache
-          cache-to: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_REPOSITORY }}-backend:buildcache,mode=max
+          cache-from: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_REPOSITORY }}-example:buildcache
+          cache-to: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_REPOSITORY }}-example:buildcache,mode=max
