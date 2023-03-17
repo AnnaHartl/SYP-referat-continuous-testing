@@ -7,7 +7,7 @@
 <meta name="generator" content="Asciidoctor 2.0.18">
 <meta name="author" content="Anna Hartl">
 <link rel="icon" type="image/png" href="themes/favicon.png">
-<title>Continuous Testing und Testcontainers</title>
+<title>Continuous Testing Quarkus Example</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -449,7 +449,7 @@ pre.rouge .hll * {
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Continuous Testing und Testcontainers</h1>
+<h1>Continuous Testing Quarkus Example</h1>
 <div class="details">
 <span id="author" class="author">Anna Hartl</span><br>
 <span id="revnumber">version 1.0.0,</span>
@@ -458,136 +458,41 @@ pre.rouge .hll * {
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_was_ist_continuous_testing">1. Was ist Continuous Testing?</a>
-<ul class="sectlevel2">
-<li><a href="#_alter_ansatz">1.1. Alter Ansatz</a></li>
-<li><a href="#_neuer_ansatz">1.2. Neuer Ansatz</a></li>
-</ul>
-</li>
-<li><a href="#_software_development_life_cycle_sdlc">2. Software Development Life Cycle (SDLC)</a></li>
-<li><a href="#_vorteile">3. Vorteile</a>
-<ul class="sectlevel2">
-<li><a href="#_arten_von_tests">3.1. Arten von Tests</a></li>
-</ul>
-</li>
-<li><a href="#_beispiel_mit_gh_actions">4. Beispiel mit GH-Actions</a></li>
-<li><a href="#_was_sind_testcontainers">5. Was sind Testcontainers?</a></li>
-<li><a href="#_notes">6. Notes</a></li>
+<li><a href="#_quarkus_unterstützung">1. Quarkus Unterstützung</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
-<div class="quoteblock">
-<blockquote>
-In God we trust; all the rest we test.
-</blockquote>
+<div class="paragraph">
+<p>Zu finden ist das Beispiel in dem Ordner <code>Testing Example</code></p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_was_ist_continuous_testing"><a class="anchor" href="#_was_ist_continuous_testing"></a>1. Was ist Continuous Testing?</h2>
-<div class="sectionbody">
-<div class="quoteblock">
-<blockquote>
-    Continuous testing is the process of incorporating automated feedback at different stages of the software development life cycle (SDLC) in support of better speed and efficiency when managing deployments.
-</blockquote>
-<div class="attribution">
-&#8212; IBM
-</div>
-</div>
-<div class="paragraph">
-<p>Kontinuierliches Testen ist der Prozess,
-bei dem automatisiertes Feedback in verschiedenen Phasen des Softwareentwicklungslebenszyklus (SDLC)
-integriert wird, um eine höhere Geschwindigkeit und Effizienz bei der
-<strong>Verwaltung von Bereitstellungen</strong> zu unterstützen.</p>
-</div>
-<div class="paragraph">
-<p>Eng verbunden mit Continuous Integration (CI),
-weil durch z. B. GH-Actions die Application bei jedem Commit getestet wird.</p>
-</div>
-<div class="paragraph">
-<p>QA Scripts - Quality Assurance</p>
-</div>
-<div class="paragraph">
-<p>Feedback wird sofort beim erstellen von Code gegeben.</p>
-</div>
-<div class="sect2">
-<h3 id="_alter_ansatz"><a class="anchor" href="#_alter_ansatz"></a>1.1. Alter Ansatz</h3>
-
-</div>
-<div class="sect2">
-<h3 id="_neuer_ansatz"><a class="anchor" href="#_neuer_ansatz"></a>1.2. Neuer Ansatz</h3>
-
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_software_development_life_cycle_sdlc"><a class="anchor" href="#_software_development_life_cycle_sdlc"></a>2. Software Development Life Cycle (SDLC)</h2>
+<h2 id="_quarkus_unterstützung"><a class="anchor" href="#_quarkus_unterstützung"></a>1. Quarkus Unterstützung</h2>
 <div class="sectionbody">
 <div class="imageblock">
 <div class="content">
-<img src="images/SDLC.png" alt="SDLC">
+<img src="images/quarkus_testing_1.png" alt="quarkus testing 1">
 </div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_vorteile"><a class="anchor" href="#_vorteile"></a>3. Vorteile</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Verbesserte Code Qualität</p>
-</li>
-<li>
-<p>Vermeidung von Engpässen</p>
-</li>
-<li>
-<p>In einem Unternehmen wird zuerst Code geschrieben
-und dann an ein Testabteilung gesendet das verursacht lange warte Zeiten</p>
-</li>
-<li>
-<p>Beschleunigung von DevOps-Prozessen</p>
-</li>
-</ul>
 </div>
 <div class="paragraph">
-<p>Traditionally, testing software is only done after code is written and sent to the
-Quality Assurance department to be independently tested. After bugs are found, the
-code is then sent back to developers to be fixed. This testing model is relatively functional.
-However, it is risky, disrupted,
-and time-consuming. Instead, businesses nowadays require fast delivery of high-quality products.</p>
+<p><code>r</code> drücken um die Tests zu starten</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/quarkus_testing_2.png" alt="quarkus testing 2">
+</div>
 </div>
 <div class="paragraph">
-<p><a href="https://katalon.com/resources-center/blog/continuous-testing-introduction">Quelle</a></p>
+<p>Für das automatische Starten wird eine folgende Zeile ins <code>application.properties</code> gegeben:</p>
 </div>
-<div class="sect2">
-<h3 id="_arten_von_tests"><a class="anchor" href="#_arten_von_tests"></a>3.1. Arten von Tests</h3>
-<div class="paragraph">
-<p><a href="https://www.ibm.com/topics/continuous-testing">Quelle IBM</a></p>
+<div class="literalblock">
+<div class="content">
+<pre>quarkus.test.continuous-testing=enabled</pre>
 </div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_beispiel_mit_gh_actions"><a class="anchor" href="#_beispiel_mit_gh_actions"></a>4. Beispiel mit GH-Actions</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_was_sind_testcontainers"><a class="anchor" href="#_was_sind_testcontainers"></a>5. Was sind Testcontainers?</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_notes"><a class="anchor" href="#_notes"></a>6. Notes</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Video herzeigen?</p>
 </div>
 </div>
 </div>
