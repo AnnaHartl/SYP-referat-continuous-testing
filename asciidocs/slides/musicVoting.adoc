@@ -3,7 +3,7 @@
 SYP-Projekt
 1.0, 2020-08-22
 ifndef::sourcedir[:sourcedir: ../src/main/java]
-ifndef::imagesdir[:imagesdir: images]
+ifndef::imagesdir[:imagesdir: ../images]
 ifndef::backend[:backend: html5]
 :icons: font
 
