@@ -10,6 +10,8 @@ ifndef::imagesdir[:imagesdir: images]
 
 //Need this blank line after ifdef, don't know why...
 ifdef::backend-html5[]
+icon:github-square[link=https://github.com/AnnaHartl/SYP-referat-continuous-testing]
+endif::backend-html5[]
 
 [quote]
 In God we trust; all the rest we test.
