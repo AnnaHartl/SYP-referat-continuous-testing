@@ -3,7 +3,8 @@ name: build-image
 on:
   push:
     branches: [ main ]
-
+    paths:
+      - TestingExample/example/**
 env:
   REGISTRY: ghcr.io
 

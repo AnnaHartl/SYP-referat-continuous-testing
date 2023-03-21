@@ -28,6 +28,8 @@ Für das automatische Starten wird eine folgende Zeile ins `application.properti
 
     quarkus.test.continuous-testing=enabled
 
+https://developers.redhat.com/articles/2021/11/08/test-driven-development-quarkus#test_driven_development_scenario[Tutorial]
+
 == Manuelle Dockerisierung
 
     docker build -f src/main/docker/Dockerfile.jvm -t annahartl/continuous-testing .
@@ -100,3 +102,5 @@ jobs:
           cache-to: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_REPOSITORY }}-backend:buildcache,mode=max
 
 ----
+
+https://htl-leonding-college.github.io/quarkus-docker-gh-actions-demo/[Quarkus with Docker]

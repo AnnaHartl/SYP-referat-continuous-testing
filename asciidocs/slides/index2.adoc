@@ -1,0 +1,123 @@
+= Diplomarbeit
+:customcss: slides.css
+Anna Hartl und Sheila Hautzmayer
+1.0, 2020-08-22
+ifndef::sourcedir[:sourcedir: ../src/main/java]
+ifndef::imagesdir[:imagesdir: images]
+ifndef::backend[:backend: html5]
+:icons: font
+
+
+== Projektteam
+image::wir.jpeg[width=600px, role=plain]
+Sheila Hautzmayer und Anna Hartl
+
+[.lightbg,background-image="felder.jpeg", background-opacity="0.7"]
+== KIVI
+Künstliche Intelligenz und Vinitor
+
+
+[.lightbg]
+== Vinitor
+image::vinitor.png[background, size=1200px]
+
+[.header, transition=fade, background-opacity="0.8"]
+== Landwirtschaft ≠ künstliche Intelligenz
+image::landwirtschaft.png[background, size=1400px]
+
+
+[.header, transition=fade, background-opacity="0.8"]
+== Landwirtschaft & künstliche Intelligenz
+image::landwirtschaft.png[background, size=1400px]
+
+[.lightbg, background-opacity="0.8"]
+== Proof Of Concept
+image::pexels-photo-1068523.jpeg[background, size=1400px]
+
+* Wie viele Daten?
+* Machine Learning im Agrarbereich?
+* Übersichtliche Darstellung?
+
+== Ziel
+image::kat.png[size=1800px, role=plain]
+
+== Programmablauf
+image::ablauf.jpeg[width=1000px, role=plain]
+
+
+[.columns]
+== Modelle
+
+[.column.catSegText]
+--
+Segmentierungs-Modell
+--
+
+
+[.column.catClasText]
+--
+Klassifizierungs-Modell
+--
+
+
+[.catSeg]
+== Segmentierungs-Modell
+Erkennen und Einzeichnen
+
+image::augmentation.png[width=2000px, role=plain]
+
+[.catSeg]
+== Transfer Learning
+Wissen wird übertragen
+
+image::212_min115.png[width=400px, role=plain]
+
+Kleiner Datensatz -> Gute Ergebnisse
+
+
+[.lightbg.catSeg, background-opacity="0.8"]
+== Anzeichnen der Felder
+* Objekt Erkennung mit Bouding Boxen
+* Semantische Segmentierung
+* Instanz Segmentierung
+
+[.header.catSeg]
+== Objekt Erkennung mit Bounding Boxen
+
+image::214_min105.jpg[width=500px, role=plain]
+
+[.catSeg]
+== Semantische Segmentierung
+
+image::214_118.jpg[width=2000px, role=plain]
+
+[.catSeg]
+== Instanz Segmentierung
+
+image::214_min131.jpg[width=2000px, role=plain]
+
+[.catSeg]
+== Mask RCNN
+image::maskrcnn.png[width=800px, role=plain]
+
+[.catSeg]
+== Ergebnis des Segmentierungs-Modell
+image::segm.png[width=800px, role=plain]
+
+[.catClas]
+== Klassifizierungs-Modell
+image::raps.png[width=800px, role=plain]
+
+[.catClas]
+== Ergebnis des Klassifizierungs-Modells
+image::statistik.png[width=800px, role=plain]
+
+[.lightbg, background-opacity="0.5"]
+== Deployment
+image::cloud.jpg[background, size=1400px]
+* LeoCloud
+* Docker Images vom Frontend und Backend
+
+[.lightbg, background-opacity="0.5"]
+== Live Demo
+image::liveDemo.jpg[background, width=800px, role=plain]

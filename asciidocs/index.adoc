@@ -1,4 +1,4 @@
-= Continuous Testing und Testcontainers
+= Continuous Testing
 Anna Hartl
 1.0.0, 2021-03-16
 ifndef::imagesdir[:imagesdir: images]
@@ -36,9 +36,11 @@ Feedback wird sofort beim erstellen von Code gegeben.
 
 === Alter Ansatz
 
+image::alt.jpeg[]
+
 === Neuer Ansatz
 
-
+image::neu.jpeg[]
 
 == Software Development Life Cycle (SDLC)
 
@@ -48,8 +50,7 @@ image::SDLC.png[]
 
 * Verbesserte Code Qualität
 * Vermeidung von Engpässen
-    * In einem Unternehmen wird zuerst Code geschrieben
-und dann an ein Testabteilung gesendet das verursacht lange warte Zeiten
+    ** In einem Unternehmen wird zuerst Code geschrieben und dann an ein Testabteilung gesendet das verursacht lange warte Zeiten
 * Beschleunigung von DevOps-Prozessen
 
 Traditionally, testing software is only done after code is written and sent to the
@@ -68,7 +69,6 @@ https://www.ibm.com/topics/continuous-testing[Quelle IBM]
 
 https://annahartl.github.io/SYP-referat-continuous-testing/ContinuousTestingExample.html[Quarkus Beispiel]
 
-== Was sind Testcontainers?
 
 == Notes
 Video herzeigen?
