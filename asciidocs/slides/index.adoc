@@ -9,23 +9,25 @@ ifndef::backend[:backend: html5]
 
 [.lightbg, background-opacity="0.8"]
 == Was ist Continous Testing?
+image::testing_hand.jpeg[background, size=1400px]
 
-Testen wird in die Entwicklung integriert
+* Testen wird in die Entwicklung integriert
 
-Feedback wird sofort beim erstellen von Code gegeben
+* Feedback wird sofort beim erstellen von Code gegeben
 
-Hand in Hand mit Contious Integration
+* Hand in Hand mit Contious Integration
 
 == Alter Ansatz
 
-image::alt.jpeg[]
+image::alt.jpeg[role=plain]
 
 == Neuer Ansatz
 
-image::neu.jpeg[]
+image::neu.jpeg[role=plain]
 
 [.lightbg, background-opacity="0.8"]
 == Vorteile
+image::wald.jpg[background, size=1400px]
 
 * Verbesserte Code Qualität
 * Vermeidung von Engpässen
