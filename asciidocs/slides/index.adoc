@@ -7,7 +7,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 ifndef::backend[:backend: html5]
 :icons: font
 
-[.lightbg, background-opacity="0.8"]
+[.lightbg, background-opacity="1"]
 == Was ist Continous Testing?
 image::testing_hand.jpeg[background, size=1400px]
 
