@@ -7,7 +7,7 @@
 <meta name="generator" content="Asciidoctor 2.0.18">
 <meta name="author" content="Anna Hartl">
 <link rel="icon" type="image/png" href="themes/favicon.png">
-<title>Continuous Testing Quarkus Example</title>
+<title>TestContainers</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -449,7 +449,7 @@ pre.rouge .hll * {
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Continuous Testing Quarkus Example</h1>
+<h1>TestContainers</h1>
 <div class="details">
 <span id="author" class="author">Anna Hartl</span><br>
 <span id="revnumber">version 1.0.0,</span>
@@ -458,9 +458,9 @@ pre.rouge .hll * {
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_quarkus_unterstützung">1. Quarkus Unterstützung</a></li>
-<li><a href="#_manuelle_dockerisierung">2. Manuelle Dockerisierung</a></li>
-<li><a href="#_gh_action">3. GH-Action</a></li>
+<li><a href="#_was_sind_testcontainers">1. Was sind Testcontainers?</a></li>
+<li><a href="#_dev_services">2. Dev Services</a></li>
+<li><a href="#_tutorial">3. Tutorial</a></li>
 </ul>
 </div>
 </div>
@@ -470,125 +470,50 @@ pre.rouge .hll * {
 <div class="paragraph">
 <p><span class="icon"><a class="image" href="https://github.com/AnnaHartl/SYP-referat-continuous-testing"><i class="fa fa-github-square"></i></a></span></p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_was_sind_testcontainers"><a class="anchor" href="#_was_sind_testcontainers"></a>1. Was sind Testcontainers?</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>Zu finden ist das Beispiel in dem Ordner <code>Testing Example</code></p>
+<p>Es ist die alternative zu mocking. Es wird ein Docker Container mit dem jeweiligen Service aufgespannt der benötigt wird.
+Zum Beispiel eine Datenbank (Postgres, &#8230;&#8203;).</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Data Access Object (DAO) Itegrations Tests</p>
+</li>
+<li>
+<p>Integrations Tests</p>
+</li>
+<li>
+<p>UI Tests (Selenium)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://www.testcontainers.org/">Testcontainers</a></p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_quarkus_unterstützung"><a class="anchor" href="#_quarkus_unterstützung"></a>1. Quarkus Unterstützung</h2>
+<h2 id="_dev_services"><a class="anchor" href="#_dev_services"></a>2. Dev Services</h2>
 <div class="sectionbody">
-<div class="imageblock">
-<div class="content">
-<img src="images/quarkus_testing_1.png" alt="quarkus testing 1">
-</div>
+<div class="paragraph">
+<p>Quarkus hat eingene Dev Services die erstellt werden wenn zum Beispiel keine Datenbank gefunden werden kann aber die Depenndency dazu vorhanden ist.
+Diese arbeiten im Hintergrund ebenfalls in Testcontainern.</p>
 </div>
 <div class="paragraph">
-<p><code>r</code> drücken um die Tests zu starten</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/quarkus_testing_2.png" alt="quarkus testing 2">
-</div>
-</div>
-<div class="paragraph">
-<p>Für das automatische Starten wird eine folgende Zeile ins <code>application.properties</code> gegeben:</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>quarkus.test.continuous-testing=enabled</pre>
-</div>
-</div>
-<div class="paragraph">
-<p><a href="https://developers.redhat.com/articles/2021/11/08/test-driven-development-quarkus#test_driven_development_scenario">Tutorial</a></p>
+<p><a href="https://quarkus.io/guides/dev-services">Quarkus Doku zu Dev Services</a></p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_manuelle_dockerisierung"><a class="anchor" href="#_manuelle_dockerisierung"></a>2. Manuelle Dockerisierung</h2>
+<h2 id="_tutorial"><a class="anchor" href="#_tutorial"></a>3. Tutorial</h2>
 <div class="sectionbody">
-<div class="literalblock">
-<div class="content">
-<pre>docker build -f src/main/docker/Dockerfile.jvm -t annahartl/continuous-testing .</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>docker run -i --rm -p 8080:8080 annahartl/continuous-testing</pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_gh_action"><a class="anchor" href="#_gh_action"></a>3. GH-Action</h2>
-<div class="sectionbody">
-<div class="listingblock">
-<div class="content">
-<pre>name: build-image
-
-on:
-  push:
-    branches: [ main ]
-
-env:
-  REGISTRY: ghcr.io
-
-jobs:
-  build:
-    name: build
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      deployments: write
-      packages: write
-      pages: write
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v1
-
-      - name: Set up JDK 17
-        uses: actions/setup-java@v3
-        with:
-          java-version: '17'
-          distribution: 'temurin'
-          cache: maven
-
-      - name: Build with Maven
-        run: cd ./TestingExample/example &amp;&amp; ./mvnw package
-
-      - name: convert github repository name to lowercase
-        run: echo "IMAGE_REPOSITORY=$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')" &gt;&gt; $GITHUB_ENV
-
-      - name: convert github registry name to lowercase
-        run: echo "IMAGE_REGISTRY=$(echo ${{ env.REGISTRY }} | tr '[:upper:]' '[:lower:]')" &gt;&gt; $GITHUB_ENV
-
-      - name: Log in to the Container registry
-        uses: docker/login-action@v1
-        with:
-          registry: ${{ env.REGISTRY }}
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Set up Docker Build
-        uses: docker/setup-buildx-action@v1
-
-      - name: Build and push
-        uses: docker/build-push-action@v2
-        with:
-          context: ./TestingExample/example
-          file: ./TestingExample/example/src/main/docker/Dockerfile.jvm
-          push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_REPOSITORY }}-backend:latest
-          build-args: |
-            configuration=production
-          cache-from: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_REPOSITORY }}-backend:buildcache
-          cache-to: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_REPOSITORY }}-backend:buildcache,mode=max</pre>
-</div>
-</div>
 <div class="paragraph">
-<p><a href="https://htl-leonding-college.github.io/quarkus-docker-gh-actions-demo/">Quarkus with Docker</a></p>
+<p><a href="https://medium.com/swlh/quarkus-testcontainers-and-storages-10534b3c79dc">Tutorial</a></p>
 </div>
 </div>
 </div>
