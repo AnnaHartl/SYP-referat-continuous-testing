@@ -7,13 +7,13 @@ ifndef::imagesdir[:imagesdir: ../images]
 ifndef::backend[:backend: html5]
 :icons: font
 
-[.lightbg, background-opacity="1"]
+[.lightbg,background-video="gear.gif",background-video-loop="true",background-opacity="0.7"]
 == Was ist Continous Testing?
 image::testing_hand.jpeg[background, size=1400px]
 
 * Testen wird in die Entwicklung integriert
 
-* Feedback wird sofort beim erstellen von Code gegeben
+* Feedback wird sofort beim Erstellen von Code gegeben
 
 * Hand in Hand mit Contious Integration
 
