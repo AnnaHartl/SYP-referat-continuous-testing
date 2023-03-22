@@ -1,0 +1,34 @@
+= TestContainers
+Anna Hartl
+1.0.0, 2021-03-16
+ifndef::imagesdir[:imagesdir: images]
+//:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
+:sourcedir: ../src/main/java
+:icons: font
+:sectnums:    // Nummerierung der Überschriften / section numbering
+:toc: left
+
+//Need this blank line after ifdef, don't know why...
+ifdef::backend-html5[]
+icon:github-square[link=https://github.com/AnnaHartl/SYP-referat-continuous-testing]
+endif::backend-html5[]
+
+== Was sind Testcontainers?
+Es ist die alternative zu mocking. Es wird ein Docker Container mit dem jeweiligen Service aufgespannt der benötigt wird.
+Zum Beispiel eine Datenbank (Postgres, ...).
+
+* Data Access Object (DAO) Itegrations Tests
+* Integrations Tests
+* UI Tests (Selenium)
+
+https://www.testcontainers.org/[Testcontainers]
+
+== Dev Services
+Quarkus hat eingene Dev Services die erstellt werden wenn zum Beispiel keine Datenbank gefunden werden kann aber die Depenndency dazu vorhanden ist.
+Diese arbeiten im Hintergrund ebenfalls in Testcontainern.
+
+https://quarkus.io/guides/dev-services[Quarkus Doku zu Dev Services]
+
+== Tutorial
+
+https://medium.com/swlh/quarkus-testcontainers-and-storages-10534b3c79dc[Tutorial]
