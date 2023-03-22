@@ -9,16 +9,18 @@ ifndef::backend[:backend: html5]
 
 [.lightbg]
 == Was sind TestContainers?
-image::containers.jpg[background, size=1400px]
+image::containers.jpg[background, size=2000px]
 
 Tests ohne Mocking mit Docker Containern
 
 * Itegraions Tests mit einer Datenbank
 * UI Tests
 
+[.lightbg]
 == Alles was gedockert werden kann, kann für einen Test benutzt werden
-image::container2.jpg[background, size=1400px]
+image::container2.jpg[background, size=2000px]
 
+[.lightbg]
 == Quarkus Dev Services
 image::containers.jpg[background, size=1400px]
 
