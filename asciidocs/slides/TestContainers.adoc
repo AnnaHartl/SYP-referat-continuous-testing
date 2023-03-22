@@ -19,7 +19,7 @@ Tests ohne Mocking mit Docker Containern
 * UI Tests
 
 [.lightbg]
-== Alles was gedockert werden kann, kann für einen Test benutzt werden
+== Kanns gedockert werden kanns getestet werden
 image::container2.jpg[background, size=2000px]
 
 [.lightbg]
