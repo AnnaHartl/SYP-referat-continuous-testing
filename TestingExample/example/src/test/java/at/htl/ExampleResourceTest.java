@@ -38,7 +38,7 @@ public class ExampleResourceTest {
     public void getOneNotFound() {
         given()
                 .when().get("/tdd/2")
-                .then().statusCode(403);
+                .then().statusCode(404);
     }
 
 }
