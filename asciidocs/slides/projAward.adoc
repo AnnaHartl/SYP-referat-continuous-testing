@@ -72,24 +72,24 @@ image::transferLearning.png[width=500px, role=plain]
 Kleiner Datensatz -> Gute Ergebnisse
 
 
-[.lightbg.catSeg, background-opacity="0.8", background-image="felder_menschen.jpeg"]
-== Anzeichnen der Felder
+//[.lightbg.catSeg, background-opacity="0.8", background-image="felder_menschen.jpeg"]
+//== Anzeichnen der Felder
 
-[.header.catSeg]
-== Objekt Erkennung mit Bounding Boxen
+//[.header.catSeg]
+//== Objekt Erkennung mit Bounding Boxen
 
-image::214_min105.jpg[width=500px, role=plain]
+//image::214_min105.jpg[width=500px, role=plain]
 
-[.header.catSeg]
-== Objekt Erkennung mit Bounding Boxen
+//[.header.catSeg]
+//== Objekt Erkennung mit Bounding Boxen
 
-image::durchgestr.jpeg[width=500px, role=plain]
+//image::durchgestr.jpeg[width=500px, role=plain]
 
 
-[.catSeg]
-== Instanz Segmentierung
+//[.catSeg]
+//== Instanz Segmentierung
 
-image::214_min131.jpg[width=2000px, role=plain]
+//image::214_min131.jpg[width=2000px, role=plain]
 
 [.catSeg]
 == Mask RCNN
