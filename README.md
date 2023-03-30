@@ -6,3 +6,7 @@ Mehr Informationen unter:
 
 Foliensatz:
 * https://annahartl.github.io/SYP-referat-continuous-testing/slides/index.html#/
+
+
+Project Award Präsentation:
+* https://annahartl.github.io/SYP-referat-continuous-testing/slides/projAward.html#/
