@@ -6,7 +6,7 @@ ifndef::sourcedir[:sourcedir: ../src/main/java]
 ifndef::imagesdir[:imagesdir: images]
 ifndef::backend[:backend: html5]
 :icons: font
-:title-slide-background-image: bauern.png
+:title-slide-background-image: menschen1.png
 
 == Projektteam
 image::wir.jpeg[width=600px, role=plain]
