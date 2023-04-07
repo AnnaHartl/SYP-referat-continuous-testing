@@ -392,10 +392,8 @@ td.hdlist1 {
 link.rel = 'stylesheet';
 link.type = 'text/css';
 link.href = window.location.search.match( /print-pdf/gi ) ? "revealjs/css/print/pdf.css" : "revealjs/css/print/paper.css";
-document.getElementsByTagName( 'head' )[0].appendChild( link );</script><link rel="stylesheet" href="slides.css"></head><body><div class="reveal"><div class="slides"><section class="title" data-state="title"><h1>KIVI</h1><p class="author"><small>Künstliche Intelligenz und Vinitor</small></p></section><section id="_projektteam"><h2>Projektteam</h2><div class="slide-content"><div class="imageblock plain"><img src="../images/wir.jpeg" alt="wir" width="600px"></div>
+document.getElementsByTagName( 'head' )[0].appendChild( link );</script><link rel="stylesheet" href="slides.css"></head><body><div class="reveal"><div class="slides"><section class="title" data-state="title" data-background-image="../images/bauerinnen.jpg"><h1>KIVI</h1><p class="author"><small>Künstliche Intelligenz und Vinitor</small></p></section><section id="_projektteam"><h2>Projektteam</h2><div class="slide-content"><div class="imageblock plain"><img src="../images/wir.jpeg" alt="wir" width="600px"></div>
 <div class="paragraph"><p>Sheila Hautzmayer und Anna Hartl</p></div></div></section>
-<section id="_volles_regal" data-background-image="../images/regalVoll.jpeg" data-background-size="contain"></section>
-<section id="_leeres_regal" data-background-image="../images/regalLeer.jpeg" data-background-size="contain"></section>
 <section id="_vinitor" class="lightbg" data-background-image="../images/vinitor.png" data-background-size="1200px"><h2>Vinitor</h2></section>
 <section id="_proof_of_concept" class="lightbg" data-background-image="../images/pexels-photo-1068523.jpeg" data-background-size="1400px" data-background-opacity="0.8"><h2>Proof Of Concept</h2><div class="slide-content">
 <div class="olist arabic"><ol class="arabic"><li><p>Wie viele Daten und welche Art von Daten?</p></li><li><p>Machine Learning im Agrarbereich?</p></li><li><p>Übersichtliche Darstellung?</p></li></ol></div></div></section>
@@ -410,10 +408,12 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );</script><link re
 <section id="_mask_rcnn" class="catSeg"><h2>Mask RCNN</h2><div class="slide-content"><div class="imageblock plain"><img src="../images/maskrcnn.png" alt="maskrcnn" width="800px"></div></div></section>
 <section id="_ergebnis_des_segmentierungs_modell" class="catSeg"><h2>Ergebnis des Segmentierungs-Modell</h2><div class="slide-content"><div class="imageblock plain"><img src="../images/segm.png" alt="segm" width="800px"></div></div></section>
 <section id="_klassifizierungs_modell" class="catClas"><h2>Klassifizierungs-Modell</h2><div class="slide-content"><div class="imageblock plain"><img src="../images/raps.png" alt="raps" width="1400px"></div></div></section>
-<section id="_ergebnis_des_klassifizierungs_modells" class="catClas"><h2>Ergebnis des Klassifizierungs-Modells</h2><div class="slide-content"><div class="imageblock plain"><img src="../images/statistik.png" alt="statistik" width="800px"></div></div></section>
+<section id="_neuronales_netz" data-background-video="../images/NeuronalesVideo.mp4" data-background-video-loop></section>
 <section id="_deployment" class="lightbg" data-background-image="../images/cloud.jpg" data-background-size="1400px" data-background-opacity="0.5"><h2>Deployment</h2><div class="slide-content">
-<div class="ulist"><ul><li><p>LeoCloud</p></li><li><p>Kubernetes</p></li><li><p>Docker Images vom Frontend und Backend</p></li></ul></div></div></section>
-<section id="_teilnahme_am_bwki" data-background-image="../images/bwki.jpeg" data-background-size="100%"></section></div></div><script src="revealjs/js/reveal.js"></script><script>Array.prototype.slice.call(document.querySelectorAll('.slides section')).forEach(function(slide) {
+<div class="paragraph"><p>TODO</p></div></div></section>
+<section id="_artikel" data-background-image="../images/artikel.jpeg" data-background-size="100%"></section>
+<section id="_maske" data-background-image="../images/maske.png" data-background-size="100%"></section>
+<section id="_softmax_funktion"><h2>Softmax-Funktion</h2><div class="slide-content"><div class="imageblock"><img src="../images/softmax.png" alt="softmax"></div></div></section></div></div><script src="revealjs/js/reveal.js"></script><script>Array.prototype.slice.call(document.querySelectorAll('.slides section')).forEach(function(slide) {
   if (slide.getAttribute('data-background-color')) return;
   // user needs to explicitly say he wants CSS color to override otherwise we might break custom css or theme (#226)
   if (!(slide.classList.contains('canvas') || slide.classList.contains('background'))) return;
