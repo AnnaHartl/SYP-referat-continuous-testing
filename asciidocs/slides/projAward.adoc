@@ -1,12 +1,11 @@
 = KIVI
 :customcss: slides.css
-Künstliche Intelligenz und Vinitor
 1.0, 2020-08-22
 ifndef::sourcedir[:sourcedir: ../src/main/java]
 ifndef::imagesdir[:imagesdir: images]
 ifndef::backend[:backend: html5]
 :icons: font
-:title-slide-background-image: bauerinnen.jpg
+:title-slide-background-image: menschen1.jpg
 
 == Projektteam
 image::wir.jpeg[width=600px, role=plain]
@@ -109,12 +108,12 @@ TODO
 
 [%notitle,.lightbg]
 == Artikel
-image::artikel.jpeg[background, size=100%]
+image::artikel.jpeg[background, size=80%]
 
 [%notitle,.lightbg]
 == Maske
 image::maske.png[background, size=100%]
 
 == Softmax-Funktion
-image::softmax.png[size=100%]
+image::softmax.png[size=100%, role=plain]
 
