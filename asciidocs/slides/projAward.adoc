@@ -6,17 +6,11 @@ ifndef::sourcedir[:sourcedir: ../src/main/java]
 ifndef::imagesdir[:imagesdir: images]
 ifndef::backend[:backend: html5]
 :icons: font
-
+:title-slide-background-image: bauerinnen.jpg
 
 == Projektteam
 image::wir.jpeg[width=600px, role=plain]
 Sheila Hautzmayer und Anna Hartl
-
-[%notitle,background-image="regalVoll.jpeg",background-size="contain"]
-== Volles Regal
-
-[%notitle,background-image="regalLeer.jpeg",background-size="contain"]
-== Leeres Regal
 
 [.lightbg]
 == Vinitor
@@ -103,17 +97,24 @@ image::segm.png[width=800px, role=plain]
 == Klassifizierungs-Modell
 image::raps.png[width=1400px, role=plain]
 
-[.catClas]
-== Ergebnis des Klassifizierungs-Modells
-image::statistik.png[width=800px, role=plain]
+[%notitle,.lightbg, background-vid[.lightbg,background-video="NeuronalesVideo.mp4",background-video-loop="true"]
+== Neuronales Netz
+
 
 [.lightbg, background-opacity="0.5"]
 == Deployment
 image::cloud.jpg[background, size=1400px]
-* LeoCloud
-* Kubernetes
-* Docker Images vom Frontend und Backend
+TODO
+
 
 [%notitle,.lightbg]
-== Teilnahme am BWKI
-image::bwki.jpeg[background, size=100%]
+== Artikel
+image::artikel.jpeg[background, size=100%]
+
+[%notitle,.lightbg]
+== Maske
+image::maske.png[background, size=100%]
+
+== Softmax-Funktion
+image::softmax.png[size=100%]
+
