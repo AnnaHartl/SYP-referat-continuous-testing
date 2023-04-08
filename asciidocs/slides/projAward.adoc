@@ -8,9 +8,9 @@ ifndef::backend[:backend: html5]
 :icons: font
 :title-slide-background-image: menschen1.png
 
-== Projektteam
-image::wir.jpeg[width=600px, role=plain]
-Sheila Hautzmayer und Anna Hartl
+//== Projektteam
+//image::wir.jpeg[width=600px, role=plain]
+//Sheila Hautzmayer und Anna Hartl
 
 [.lightbg]
 == Vinitor
@@ -103,7 +103,7 @@ image::raps.png[width=1400px, role=plain]
 
 [%notitle, .lightbg]
 == Deployment
-image::technologien.jpeg[background, size=1000px]
+image::technologien.jpeg[background, size=1200px]
 
 
 [%notitle,.lightbg]
