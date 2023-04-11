@@ -103,7 +103,7 @@ image::raps.png[width=1400px, role=plain]
 
 [%notitle, .lightbg]
 == Deployment
-image::technologien.jpeg[background, size=1200px]
+image::technologien.jpeg[background, size=80%]
 
 [%notitle,.lightbg]
 == Ende
