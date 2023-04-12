@@ -114,13 +114,14 @@ image::technologien.jpeg[background, size=80%]
 == Ende
 image::felder.jpg[background, size=100%]
 
-[%notitle,.lightbg]
-== Artikel
-image::artikel.jpeg[background, size=80%]
 
 [%notitle,.lightbg]
 == Maske
 image::maske.png[background, size=100%]
+
+[%notitle,.lightbg]
+== Artikel
+image::artikel.jpeg[background, size=80%]
 
 == Softmax-Funktion
 image::softmax.png[width=1400px, role=plain]
