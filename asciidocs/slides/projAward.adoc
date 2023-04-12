@@ -23,7 +23,7 @@ image::pexels-photo-1068523.jpeg[background, size=1400px]
 
 1. Machine Learning im Agrarbereich?
 2. Wie viele Daten und welche Art von Daten?
-3. Übersichtliche Darstellung?
+3. Geeignete Darstellung des Ergebnisses?
 
 [.lightbg, background-opacity="0.5"]
 == Live Demo
