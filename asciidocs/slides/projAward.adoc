@@ -31,7 +31,7 @@ image::liveDemo.jpg[background, width=800px, role=plain]
 
 
 
-[%notitle, background-opacity="0.5"]
+[%notitle]
 == Satellitenbild
 image::sateliten.jpg[background, width=800px, role=plain]
 
