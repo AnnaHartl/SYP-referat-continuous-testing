@@ -112,7 +112,7 @@ image::raps.png[width=1400px, role=plain]
 == Deployment
 image::technologien.jpeg[background, size=80%]
 
-[%notitle, background-video="uns.mp4"]
+[%notitle,.lightbg, background-vid[.lightbg,background-video="uns.mp4"]
 == Ende
 
 
